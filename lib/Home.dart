@@ -16,10 +16,10 @@ class MainPage extends StatefulWidget {
 }
 
 class MainPageState extends State<MainPage> {
-  PageController _controller = PageController(initialPage: 0);
+  final PageController _controller = PageController(initialPage: 0);
   int _curPageIndex = 0;
-  Color _defaultColor = Colors.black45;
-  Color _activeColor = Colors.blue;
+  final Color _defaultColor = Colors.black45;
+  final Color _activeColor = Colors.blue;
 
   @override
   Widget build(BuildContext context) {
