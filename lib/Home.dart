@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/laucher_other_app/launcherApp.dart';
 import 'HomePage.dart';
 import 'SearchPage.dart';
 import 'TravelPage.dart';
@@ -25,9 +26,6 @@ class MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: Text("首页"),
-        ),
         body: PageView(
           controller: _controller,
           children: <Widget>[HomePage(), SearchPage(), TravelPage(), MyPage()],
