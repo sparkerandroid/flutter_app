@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/laucher_other_app/launcherApp.dart';
+
 import 'HomePage.dart';
+import 'MyPage.dart';
 import 'SearchPage.dart';
 import 'TravelPage.dart';
-import 'MyPage.dart';
 
 void main() {
   runApp(MainPage());
