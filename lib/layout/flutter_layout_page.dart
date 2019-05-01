@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/laucher_other_app/launcherApp.dart';
 
 class LayoutTestPage extends StatelessWidget {
   @override
@@ -112,14 +111,6 @@ class LayoutTestPage extends StatelessWidget {
             ],
           ),
         ],
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.push(context, MaterialPageRoute(builder: (context) {
-           return new LauncherTestPage();
-          }));
-        },
-        child: Text("启动第三方"),
       ),
     );
   }

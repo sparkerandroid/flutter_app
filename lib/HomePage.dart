@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/http/HttpTest.dart';
+import 'package:flutter_app/test1/other_function_test.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 
 class HomePage extends StatefulWidget {
@@ -31,10 +31,10 @@ class HomePageState extends State<HomePage> {
         floatingActionButton: FloatingActionButton(
           onPressed: () {
             Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-              return new HttpSendPage();
+              return new OtherFunctionTest();
             }));
           },
-          child: Text("网络"),
+          child: Text("实战"),
         ),
         body: Stack(
           //通过Stack布局，自定义AppBar，主要是flutter提供的appBar写的比较死

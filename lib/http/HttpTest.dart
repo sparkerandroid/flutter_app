@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_app/layout/flutter_layout_page.dart';
-import 'package:http/http.dart' as http;
 import 'dart:convert';
+
+import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
 
 class HttpSendPage extends StatefulWidget {
   @override
@@ -50,14 +50,6 @@ class HttpSendState extends State<HttpSendPage> {
               ],
             ),
           ))),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-            return new LayoutTestPage();
-          }));
-        },
-        child: Text("flutter布局"),
-      ),
     );
   }
 }

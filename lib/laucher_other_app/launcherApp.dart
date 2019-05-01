@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/pick_image/PickImageTest.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class LauncherTestPage extends StatelessWidget {
@@ -27,11 +26,6 @@ class LauncherTestPage extends StatelessWidget {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(onPressed: () {
-        Navigator.push(context, MaterialPageRoute(builder: (context) {
-          return PickImagePage();
-        }));
-      }),
     );
   }
 
