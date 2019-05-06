@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/home_page.dart';
+import 'package:flutter_app/my_page.dart';
+import 'package:flutter_app/search_page.dart';
+import 'package:flutter_app/travel_page.dart';
 
-import 'HomePage.dart';
-import 'MyPage.dart';
-import 'SearchPage.dart';
-import 'TravelPage.dart';
 
 void main() {
   runApp(MainPage());
@@ -28,7 +28,7 @@ class MainPageState extends State<MainPage> {
       home: Scaffold(
         body: PageView(
           controller: _controller,
-          children: <Widget>[HomePage(), SearchPage(), TravelPage(), MyPage()],
+          children: <Widget>[new HomePage(), SearchPage(), TravelPage(), MyPage()],
         ),
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: _curPageIndex,

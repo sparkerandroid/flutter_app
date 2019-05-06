@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/SharePreferenceTest.dart';
-import 'package:flutter_app/future/FutureBuilderTest.dart';
-import 'package:flutter_app/http/HttpTest.dart';
-import 'package:flutter_app/laucher_other_app/launcherApp.dart';
+import 'package:flutter_app/share_preference_test.dart';
+import 'package:flutter_app/future/future_builder_test.dart';
+import 'package:flutter_app/http/http_test.dart';
+import 'package:flutter_app/laucher_other_app/launcher_app.dart';
 import 'package:flutter_app/layout/flutter_layout_page.dart';
-import 'package:flutter_app/pick_image/PickImageTest.dart';
+import 'package:flutter_app/pick_image/pick_image_test.dart';
 
 class OtherFunctionTest extends StatefulWidget {
   @override

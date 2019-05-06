@@ -1,4 +1,8 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:flutter_app/dao/home_dao.dart';
+import 'package:flutter_app/model/home_model.dart';
 import 'package:flutter_app/test1/other_function_test.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 
@@ -92,5 +96,14 @@ class HomePageState extends State<HomePage> {
                 ))
           ],
         ));
+  }
+}
+
+loadData() async {
+  try {
+    HomeModel homeModel = await HomeDao().fetchHomeData();
+    print(json.encode(homeModel.config.toJson()));
+  } catch (e) {
+    print(e);
   }
 }
