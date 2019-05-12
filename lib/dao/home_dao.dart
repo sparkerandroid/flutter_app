@@ -6,7 +6,7 @@ class HomeDao {
   static const String HOME_URL =
       "http://www.devio.org/io/flutter_app/json/home_page.json";
 
-  Future<HomeModel> fetchHomeData() async {
+  static Future<HomeModel> fetchHomeData() async {
     var response = await http.get(HOME_URL);
     if (response != null && response.statusCode == 200) {
       Utf8Decoder utf8decoder = Utf8Decoder(); //防止中文乱码
